@@ -49,11 +49,11 @@ author:
 
 # Add links to the sidebar.
 menu:
-  - title:             Example
+  - title:             Insights and Opinion
     url:               /example/
-  - title:             Documentation
+  - title:             White Papers
     url:               /docs/
-  - title:             About
+  - title:             About Me
     url:               /about/
 
 # Add links to the footer.
