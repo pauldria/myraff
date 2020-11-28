@@ -50,9 +50,9 @@ author:
 # Add links to the sidebar.
 menu:
   - title:             Insights and Opinion
-    url:               /example/
+    url:               /insights/
   - title:             White Papers
-    url:               /docs/
+    url:               /whitepapers/
   - title:             About Me
     url:               /about/
 
