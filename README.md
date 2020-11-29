@@ -1,20 +1,14 @@
-# Hydejack Starter Kit
+# Paul Raff's Personal Page
 
-A quicker, cleaner way to get started blogging with [Hydejack](https://hydejack.com/).
+Built with [Hydejack](https://github.com/hydecorp/hydejack).
 
-## Quick Start
-### Running locally
-1. Clone repository (git users), or [download] and unzip.
-2. Open terminal, `cd` into root directory (where `_config.yml` is located)
-3. Run `bundle install` [^1]
-4. Run `bundle exec jekyll serve`
-5. Open <http://localhost:4000/hydejack-starter-kit/>
+# Details of the Site
 
-## What's next?
-* Open files and read the comments
-* Read the [docs](https://hydejack.com/docs/)
-* Buy the [PRO version](https://hydejack.com/download/) to get the project and resume layout, newsletter subscription box, custom forms, and more.
+## Nav
 
-[^1]: Requires Bundler. Install with `gem install bundler`.
+* **Basic pages** - [\_config.yml](./_config.yml) has the `menu` section where each `url` maps to a subdirectory. The default page is `README.md` in each subdirectory, and other files can be used for additional nav. 
+* **Posts** - posts are organized by categories, each one defined in `_featured_categories`. The category name should be its own subdirectory, for example `insights`. Posts are markdown files in the `_posts` subdirectory. 
 
-[download]: https://github.com/hydecorp/hydejack-starter-kit/archive/master.zip
+## New Posts
+
+All that's minimally necessary is a new file with filename format `YYYY-MM-DD-<custom>.md`. Posts will be ordered by date implied in the files. 
