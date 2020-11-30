@@ -1,4 +1,4 @@
-# Paul Raff's Personal Page
+# Paul Raff's Personal Page - Effective Data Consulting
 
 Built with [Hydejack](https://github.com/hydecorp/hydejack).
 
@@ -11,4 +11,11 @@ Built with [Hydejack](https://github.com/hydecorp/hydejack).
 
 ## New Posts
 
-All that's minimally necessary is a new file with filename format `YYYY-MM-DD-<custom>.md`. Posts will be ordered by date implied in the files. 
+All that's minimally necessary is a new file with filename format `YYYY-MM-DD-<custom>.md`. Posts will be ordered by date implied in the files. Use `layout: post` in the front matter. Start with Hello, World and work from there. 
+
+## Testing Locally
+
+```
+bundle exec jekyll serve
+```
+

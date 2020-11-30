@@ -13,4 +13,4 @@ The most effective documentation I wrote was what I'll call <span style="backgro
 
 This blog post works in exactly the same way - instead of reading a document on how a post makes its way to the blog, I can reference this first one and put it together.
 
-{{contact_me}} to find out more about how Paul Raff Consulting can transform your business via this technique and many others. 
+[Contact Me](mailto:paul+consulting@myraff.com?subject=Interested%20in%20Effective%20Data%20Consulting) to find out more about how Effective Data Consulting can transform your business via this technique and many others. 
