@@ -355,7 +355,7 @@ social:
   name:                Paul Raff
   links:
     - https://twitter.com/ptotheraff
-    - https://github.com/myraff
+    - https://github.com/pauldria
 
 
 # Plugin Configs
@@ -413,3 +413,8 @@ jekyll_compose:
       links:
         - title: Project Link
           url: https://example.com
+
+# Custom config
+# ---------------------------------------------------------------------------------------
+
+contact_me:         [Contact Me](mailto:paul+consulting@myraff.com?subject=Interested%20in%20Paul%20Raff%20Consulting)
