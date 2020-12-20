@@ -8,11 +8,9 @@ raff:
   # Used at the bottom of each page and at the top of the `about` layout
   # Markdown enabled, can use multiple paragraphs (enabled by `|`)
   about:             |
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    Paul Raff is a PhD Mathematician and owner of Effective Data Consulting. He's currently a Principal Data Scientist in the Clinical Analytics team at Aetna, a CVS Health Company. Prior to that he spent 10 years at Amazon as a supply chain researcher and at Microsoft as an expert in A/B testing and online experimentation. 
     
-    Open `_data/authors.yml` to edit this text.
+    Paul focuses on the big picture with data, which emphasizes the need to think of data holistically and utilizing simple and effective techniques for your data. He excels at architecting the appropriate use of data and solving today's problems while preparing for tomorrow's. Contact him to find out more about how he can help your business excel. 
 
   # This photo will be used in the about section
   picture:
