@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Understanding COVID By Age - A Better Way
-image: /assets/img/blog/horse-to-water.jpg
+image: /assets/img/blog/blue-covid.jpg
 description: >
   You don't want to make you reader do any work when understanding your data. The Seattle Times lacked some in this axis in a recent article talking about COVID for different age groups. Read more to see how we can make this better. 
 sitemap: false
