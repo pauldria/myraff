@@ -49,3 +49,6 @@ _zip
 
 /assets/js/*hydejack-*
 /_sass/*/__*__/*
+
+# Folders to ignore
+**/.ipynb_checkpoints/**
