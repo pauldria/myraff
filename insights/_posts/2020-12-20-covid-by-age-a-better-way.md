@@ -19,6 +19,6 @@ This is another case of where **a simple and effective baseline** can really bri
 
 **As a bonus**, you get additional insight: the 0-19 age group is well below expectation, which isn't clear from the original plot. This is extremely important for everyone to both understand the current state of COVID and see how it can change in the future. 
 
-[Check out my analysis](../../analyses/20201206-wa-covid-by-age/Communicating COVID By Age.ipynb) to see how easy it is to change the data to get much better insight. This is just one of many ways I can help you turn your data into action. 
+[Check out my analysis](https://github.com/pauldria/myraff/blob/master/analyses/20201206-wa-covid-by-age/Communicating%20COVID%20By%20Age.ipynb) to see how easy it is to change the data to get much better insight. This is just one of many ways I can help you turn your data into action. 
 
 [Contact Me](mailto:paul+consulting@myraff.com?subject=Interested%20in%20Effective%20Data%20Consulting) to find out more about how Effective Data Consulting can transform your business via this technique and many others. 
