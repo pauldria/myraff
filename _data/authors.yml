@@ -10,15 +10,15 @@ raff:
   about:             |
     Paul Raff is a PhD Mathematician and owner of Effective Data Consulting. He's currently a Principal Data Scientist in the Clinical Analytics team at Aetna, a CVS Health Company. Prior to that he spent 10 years at Amazon as a supply chain researcher and at Microsoft as an expert in A/B testing and online experimentation. 
     
-    Paul focuses on the big picture with data, which emphasizes the need to think of data holistically and utilizing simple and effective techniques for your data. He excels at architecting the appropriate use of data and solving today's problems while preparing for tomorrow's. Contact him to find out more about how he can help your business excel. 
+    Paul focuses on the big picture with data, which emphasizes the need to think of data holistically and utilizing simple and effective techniques for your data. He excels at architecting the appropriate use of data and solving today's problems while preparing for tomorrow's. [Contact him](mailto:paul@myraff.com) to find out more about how he can help your business excel, either through freelance or consulting work.  
 
   # This photo will be used in the about section
   picture:
-    path:            https://placehold.it/128x128
+    path:            https://github.com/pauldria/myraff/raw/master/assets/img/raff-head-128-128.jpg
     # srcset is optional, but can be used to provide higher res versions for retina displays
     srcset:
-      1x:            https://placehold.it/128x128
-      2x:            https://placehold.it/256x256
+      1x:            https://github.com/pauldria/myraff/raw/master/assets/img/raff-head-128-128.jpg
+      2x:            https://github.com/pauldria/myraff/raw/master/assets/img/raff-head-256-256.jpg
 
   # Social media icons in sidebar
   # Comment/uncommet to show/hide
