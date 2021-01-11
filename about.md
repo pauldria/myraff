@@ -17,6 +17,7 @@ redirect_from:
 Paul Raff - who goes by Raff - has over 10 years of experience in data science and applied research on top of his PhD education. Here's a summary of the impact that he has provided in multiple domains and areas:
 
 <table>
+
   <tr>
       <td><img src = "https://github.com/pauldria/myraff/raw/master/assets/img/aetna-logo-600.png" /></td>
       <td>
@@ -34,10 +35,13 @@ Paul Raff - who goes by Raff - has over 10 years of experience in data science a
       <td>
         <b>Principal Data Scientist Lead - ExP</b>
         <p />
-        <p />
         <b>Principal Program Manager Lead - COSINE Data</b>
         <p />
         <p />
+        Raff cut his teeth in A/B Experimentation in Microsoft's ExP org, helping it grow from an organization of 10 to an organization of 150, starting as an individual contributor and ending leading a team of 10. 
+        <p />
+        <p />
+        Raff helped Bing, Windows, Office, Xbox, and other organizations run tens of thousands of A/B experiments and provide <i>simple, effective, and trustworthy</i> analysis and insight.
       </td>
   </tr>
   <tr>
