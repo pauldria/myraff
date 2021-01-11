@@ -42,6 +42,9 @@ Paul Raff - who goes by Raff - has over 10 years of experience in data science a
         <p />
         <p />
         Raff helped Bing, Windows, Office, Xbox, and other organizations run tens of thousands of A/B experiments and provide <i>simple, effective, and trustworthy</i> analysis and insight.
+        <p />
+        <p />
+        Raff played instrumental roles in ensuring that experimentation was built into the core of Windows 10, and has created various useful and effective tools to help experimenters understand the results of their experiments and iterate quickly. 
       </td>
   </tr>
   <tr>
