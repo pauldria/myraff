@@ -52,3 +52,6 @@ _zip
 
 # Folders to ignore
 **/.ipynb_checkpoints/**
+
+# Other files
+Gemfile.lock
