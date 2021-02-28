@@ -2,7 +2,7 @@
     "fileLocations": [
         {
             "URIs": [
-                "s3://effectivedata.tutorial.data/covid-cases-processed.csv"
+                "https://s3.us-east-2.amazonaws.com/effectivedata.tutorial.data/covid-cases-processed.csv"
             ]
         }
     ],
