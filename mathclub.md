@@ -1,5 +1,6 @@
 ---
 layout: page
+title: Jefferson Middle School Math Club
 sitemap: false
 ---
 
