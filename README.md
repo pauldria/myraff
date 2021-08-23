@@ -11,7 +11,7 @@ Built with [Hydejack](https://github.com/hydecorp/hydejack).
 
 ## New Posts
 
-All that's minimally necessary is a new file with filename format `YYYY-MM-DD-<custom>.md`. Posts will be ordered by date implied in the files. Use `layout: post` in the front matter. Start with Hello, World and work from there. 
+All that's minimally necessary is a new file with filename format `YYYY-MM-DD-<custom>.md`. Posts will be ordered by date implied in the files. Use `layout: post` in the front matter. Start with [Hello, World](./insights/_posts/2020-11-28-hello-world.md) and work from there. 
 
 ## Testing Locally
 
