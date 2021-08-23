@@ -4,7 +4,7 @@ sitemap: false
 ---
 
 <p style="text-align:center;">
-<img src="./assets/img/mathclub.png" alt="Math Club Logo"/>
+<img src="assets/img/mathclub.png" alt="Math Club Logo"/>
 </p>
   
 # Welcome to the Math Club
