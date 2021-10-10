@@ -13,8 +13,21 @@ sitemap: false
 This page gives all of the details of Math Club at [Jefferson Middle School](https://jms.mtlsd.org/), along with an overview of the different topics and themes we cover each session with my commentary. 
 
 Quick links:
-* [Email Me](mailto:paul@myraff.com)
+* [Email Me](mailto:praff@mtlsd.net)
 * [MathCOUNTS Main Page](https://www.mathcounts.org/)
+
+c
+
+We had some A/V issues but they'll be taken care of next time with some extra cables that I purchased. 
+
+The meeting topic this week was [**Faster Arithmetic Methods**](https://www.mathcounts.org/resources/faster-arithmetic-methods), which covered a lot of tips for how you can make slight changes to a problem to make it easier to solve. 
+
+Here's a great simple example: _find (363 + 709) + 637_. The parentheses are tricking you into wanting to add the two numbers first, but if you notice that 363 + 637 = 1000, then you can get the answer (1709) more quickly. 
+* [Go here](https://www.youtube.com/watch?v=ZPQ2_b_T0dE) for the video about Faster Arithmetic Methods (that we didn't have time to watch in the meeting. 
+* [Go here](https://www.mathcounts.org/sites/default/files/Faster_Arithmetic_Methods_%28M%29.pdf) for the handout that was given out.
+* [Go here](https://docs.google.com/presentation/d/1Yfbfsex5l-ukYJSK-atGtIYrpotlCNFCSOidvFBtogM/edit?usp=sharing) for the complete slides that were covered in the meeting.
+
+See you next week, October 13, for the next meeting!
 
 # Meeting 1 - September 15, 2021
 
