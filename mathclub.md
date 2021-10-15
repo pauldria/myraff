@@ -16,7 +16,18 @@ Quick links:
 * [Email Me](mailto:praff@mtlsd.net)
 * [MathCOUNTS Main Page](https://www.mathcounts.org/)
 
-c
+# Meeting 3 - October 13, 2021
+
+The meeting topic this week was [**The Fundamental Counting Principle**](https://www.mathcounts.org/resources/fundamental-counting-principle), which covered a lot of areas around how to count things. Check out the video right here:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/XkAz9LvV2dU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+* [Go here](https://www.mathcounts.org/sites/default/files/u70427/The_Fundamental_Counting_Principle_%28M%29.pdf) for the handout that was given out.
+* [Go here](https://docs.google.com/presentation/d/1AdzfYSZDd2-clSP-UTYK4bddlDBO6W9OpPZcIfczyw4/edit?usp=sharing) for the complete slides that were covered in the meeting.
+
+See you next week, October 20, for the next meeting, where we will cover some geometry questions!
+
+# Meeting 2 - October 6, 2021
 
 We had some A/V issues but they'll be taken care of next time with some extra cables that I purchased. 
 
