@@ -16,6 +16,17 @@ Quick links:
 * [Email Me](mailto:praff@mtlsd.net)
 * [MathCOUNTS Main Page](https://www.mathcounts.org/)
 
+# Meeting 4 - October 20, 2021
+
+The meeting topic this week was [**Ratios and Area**](https://www.mathcounts.org/resources/ratios-and-area). Check out the video right here:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/hoTm8D5EsWA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+* [Go here](https://www.mathcounts.org/sites/default/files/DSEC%20Ratios%20%26%20Area%20(M).pdf) for the handout that was given out.
+* [Go here](https://docs.google.com/presentation/d/1Ii-2zJ1lVGdRCvwzQ7pZUgsy31oeyD-ajJ0jLcLjqv4/edit?usp=sharing) for the complete slides that were covered in the meeting.
+
+See you next week, October 27, for some probability!
+
 # Meeting 3 - October 13, 2021
 
 The meeting topic this week was [**The Fundamental Counting Principle**](https://www.mathcounts.org/resources/fundamental-counting-principle), which covered a lot of areas around how to count things. Check out the video right here:
