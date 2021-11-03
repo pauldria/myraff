@@ -16,6 +16,12 @@ Quick links:
 * [Email Me](mailto:praff@mtlsd.net)
 * [MathCOUNTS Main Page](https://www.mathcounts.org/)
 
+# Meeting 5 - October 27, 2021
+
+Instead of probability, we did a mock Sprint Round to assess the students and to give them a glimpse of part of the competition.
+
+Students took the [2018 MATHCOUNTS Sprint Round](https://www.houstonisd.org/cms/lib2/TX01001591/Centricity/Domain/8983/2018%20Mathcounts_Chapter%20Competition%20Sprint%20Round.pdf), which is a 30-question test given over 40 minutes. 
+
 # Meeting 4 - October 20, 2021
 
 The meeting topic this week was [**Ratios and Area**](https://www.mathcounts.org/resources/ratios-and-area). Check out the video right here:
