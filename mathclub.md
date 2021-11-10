@@ -16,6 +16,13 @@ Quick links:
 * [Email Me](mailto:praff@mtlsd.net)
 * [MathCOUNTS Main Page](https://www.mathcounts.org/)
 
+# Meeting 6 - November 3, 2021
+
+The meeting topic this week was [**Patterns**](https://www.mathcounts.org/resources/representing-patterns-numerically). Either find the pattern one-by-one, or often you'll need to find the formula for the pattern!
+
+* [Go here](https://www.mathcounts.org/sites/default/files/u70427/Representing_Patterns_Numerically_%28M%29.pdf) for the handout that was given out.
+* [Go here](https://docs.google.com/presentation/d/1FXrW1Nz3WDX0ebaGYMoNA5PEAp_nOdhc_lRZ_AWoTc0/edit?usp=sharing) for the complete slides that were covered in the meeting.
+
 # Meeting 5 - October 27, 2021
 
 Instead of probability, we did a mock Sprint Round to assess the students and to give them a glimpse of part of the competition.
