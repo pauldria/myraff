@@ -16,6 +16,18 @@ Quick links:
 * [Email Me](mailto:praff@mtlsd.net)
 * [MathCOUNTS Main Page](https://www.mathcounts.org/)
 
+# Meeting 7 - November 10, 2021
+
+We went over the competition structure and did a practice Team Round. 
+* The 2022 Mathcounts Competition is on **Thursday, February 17, 2022**. It will be online, but they are aiming to do a full competition.
+* There are four sections of the competition:
+  * The **Sprint Round** is individual, 30 questions over 40 minutes. No calculator.
+  * The **Target Round** is individual, 4 pairs of 2 questions with 6 minutes per pair. Calculators are allowed.
+  * The **Team Round** is team, 10 questions over 20 minutes. Calculators are allowed.
+  * The **Countdown Round** is 1-on-1 with the first correct answer advancing to the next mathlete. 45 seconds for each question max, no calculators allowed. 
+
+* [Go here](https://docs.google.com/presentation/d/1Qg_ykVxlSYjvMKmyE-zMGk1CzZvxdyZyVwCqdveTbeM/edit?usp=sharing) for the slides we covered along with a walkthrough of all the questions that was asked in the [Team Round practice](https://www.brookline.k12.ma.us/cms/lib/MA01907509/Centricity/Domain/573/2018%20School%20Competition%20Complete.pdf).
+
 # Meeting 6 - November 3, 2021
 
 The meeting topic this week was [**Patterns**](https://www.mathcounts.org/resources/representing-patterns-numerically). Either find the pattern one-by-one, or often you'll need to find the formula for the pattern!
