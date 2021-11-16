@@ -15,6 +15,7 @@ This page gives all of the details of Math Club at [Jefferson Middle School](htt
 Quick links:
 * [Email Me](mailto:praff@mtlsd.net)
 * [MathCOUNTS Main Page](https://www.mathcounts.org/)
+* [Sign up for an account at AoPS!](https://artofproblemsolving.com/contests/accept/caa27237945f3c0f61100cc6df862a44)
 
 # Meeting 7 - November 10, 2021
 
