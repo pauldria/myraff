@@ -23,7 +23,7 @@ We went over [Averages](https://www.mathcounts.org/resources/averages) and how t
 * [Go here for the practice problems we went over](https://www.mathcounts.org/sites/default/files/DSEC%20Averages%20(M).pdf).
 * [Go here for the slides we covered](https://docs.google.com/presentation/d/17Uh2Jvop1UDVxYX7AQSl_Mw3sJM9OVDpGJEFyBijC24/edit?usp=sharing).
 
-**BONUS** [Target Round practice problems!](./assets/mathclub/2021%2011%20November%20-%20Jefferson%20Middle%20School%20Math%20Club%20Target%20Round%20Practice.pdf)
+**BONUS** [Target Round practice problems!](/assets/mathclub/2021%2011%20November%20-%20Jefferson%20Middle%20School%20Math%20Club%20Target%20Round%20Practice.pdf)
 
 # Meeting 7 - November 10, 2021
 
