@@ -17,6 +17,16 @@ Quick links:
 * [MathCOUNTS Main Page](https://www.mathcounts.org/)
 * [Sign up for an account at AoPS!](https://artofproblemsolving.com/contests/accept/caa27237945f3c0f61100cc6df862a44)
 
+# Meeting 9 - December 1, 2021
+
+We practiced the **Target Round**, which is part of the competition consisting of four pairs of problems - getting progressively harder - with 6 minutes per pair given to solve. You will need a calculator! 
+* Problems we did:
+  * [Warmup problems](/assets/mathclub/target-round-warmup.pdf)
+  * [Target Round 1](/assets/mathclub/target-round-1.pdf)
+  * [Target Round 2](/assets/mathclub/target-round-2.pdf)
+  * [Target Round 3](/assets/mathclub/target-round-3.pdf)
+* [Go here for the slides we covered](https://docs.google.com/presentation/d/16F-G2qTtsxoluxsMx8Kc34xSb6kZh4AOb7QpcYC2pkk/edit?usp=sharing).
+
 # Meeting 8 - November 17, 2021
 
 We went over [Averages](https://www.mathcounts.org/resources/averages) and how to handle them effectively.
