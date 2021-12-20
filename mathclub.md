@@ -17,6 +17,11 @@ Quick links:
 * [MathCOUNTS Main Page](https://www.mathcounts.org/)
 * [Sign up for an account at AoPS!](https://artofproblemsolving.com/contests/accept/caa27237945f3c0f61100cc6df862a44)
 
+# Meeting 11 - December 15, 2021
+
+We did a practice abbreviated school competition, which consisted of the first 24 question of the [2016 Chapter Competition Sprint Round](https://www.ellipsisacademy.com/uploads/1/9/5/3/19539617/mathcounts_2016__chapter_competition_sprint_round.pdf) and [Target Round Questions 3-6 of the 2017 School Competition](https://poway.instructure.com/files/7642668/download?download_frd=1). 
+* [Click here](https://docs.google.com/presentation/d/1ok8ssUMe7hgnFeuOgf2EAREdD9NC3v2C2obMUcL2M1M/edit?usp=sharing) for solutions to them all!
+
 # Meeting 9 - December 1, 2021
 
 We practiced the **Target Round**, which is part of the competition consisting of four pairs of problems - getting progressively harder - with 6 minutes per pair given to solve. You will need a calculator! 
