@@ -7,9 +7,9 @@
 	>
 <channel>
 	<title>
-	Comments on: Hello world!	</title>
+	Comments for Paul Raff	</title>
 	<atom:link href="./index.html" rel="self" type="application/rss+xml" />
-	<link>./../index.html</link>
+	<link>./../../index.html</link>
 	<description></description>
 	<lastBuildDate>Fri, 29 Mar 2024 11:37:23 +0000</lastBuildDate>
 	<sy:updatePeriod>
@@ -19,8 +19,8 @@
 	<generator>https://wordpress.org/?v=6.4.3</generator>
 	<item>
 		<title>
-		By: A WordPress Commenter		</title>
-		<link>./../index.html#comment-1</link>
+		Comment on Hello world! by A WordPress Commenter		</title>
+		<link>./../../hello-world/index.html#comment-1</link>
 
 		<dc:creator><![CDATA[A WordPress Commenter]]></dc:creator>
 		<pubDate>Fri, 29 Mar 2024 11:37:23 +0000</pubDate>
