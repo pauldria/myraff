@@ -1,4 +1,4 @@
-# Paul Raff's Personal Page - Effective Data Consulting
+# Myraff
 
 Built with [Hydejack](https://github.com/hydecorp/hydejack).
 
