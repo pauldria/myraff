@@ -1,21 +1,13 @@
 # Myraff
 
-Built with [Hydejack](https://github.com/hydecorp/hydejack).
+Built with [Wordpress Local](https://localwp.com/), exported as a static site and uploaded to the [./docs](docs) folder and published via Github Pages. 
 
-# Details of the Site
+# Updating the Site
 
-## Nav
+Update the site on your computer, and utilize the [Simply Static](https://wordpress.org/plugins/simply-static/) plugin to deploy the files. **Be sure to deploy as a static site**.
 
-* **Basic pages** - [\_config.yml](./_config.yml) has the `menu` section where each `url` maps to a subdirectory. The default page is `README.md` in each subdirectory, and other files can be used for additional nav. 
-* **Posts** - posts are organized by categories, each one defined in `_featured_categories`. The category name should be its own subdirectory, for example `insights`. Posts are markdown files in the `_posts` subdirectory. 
+Put the deployed files in Github, and _whoosh_. 
 
-## New Posts
+# Setting up a New Computer
 
-All that's minimally necessary is a new file with filename format `YYYY-MM-DD-<custom>.md`. Posts will be ordered by date implied in the files. Use `layout: post` in the front matter. Start with [Hello, World](./insights/_posts/2020-11-28-hello-world.md) and work from there. 
-
-## Testing Locally
-
-```
-bundle exec jekyll serve
-```
-
+The [zip file](./myraff.zip) is periodically updated from an export in Local. Install Local and import this zip file to get rolling. 
