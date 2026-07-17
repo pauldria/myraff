@@ -1,0 +1,32 @@
+name: Verify /docs integrity
+
+# The site is a committed static export served by GitHub Pages from master:/docs.
+# This check fails fast if the files GitHub Pages depends on go missing —
+# most importantly docs/CNAME, whose loss silently drops the custom domain.
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check required GitHub Pages files
+        run: |
+          fail=0
+          if [ ! -f docs/index.html ]; then
+            echo "::error::docs/index.html is missing - the site would serve nothing"
+            fail=1
+          fi
+          if [ ! -f docs/CNAME ]; then
+            echo "::error::docs/CNAME is missing - GitHub Pages would drop the custom domain"
+            fail=1
+          elif [ "$(tr -d '[:space:]' < docs/CNAME)" != "myraff.com" ]; then
+            echo "::error::docs/CNAME must contain exactly 'myraff.com'"
+            fail=1
+          fi
+          exit $fail
