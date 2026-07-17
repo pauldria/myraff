@@ -1,0 +1,14 @@
+{
+  "name": "myraff",
+  "version": "1.0.0",
+  "description": "Paul Raff's personal site (myraff.com) — static site built with Eleventy, published via GitHub Pages from /docs.",
+  "license": "MIT",
+  "scripts": {
+    "build": "rm -rf docs && eleventy",
+    "serve": "eleventy --serve",
+    "clean": "rm -rf docs"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0"
+  }
+}

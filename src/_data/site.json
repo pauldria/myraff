@@ -1,0 +1,101 @@
+{
+  "title": "Paul Raff",
+  "tagline": "Principal Data Scientist",
+  "url": "https://myraff.com",
+  "author": "Paul Raff",
+  "email": "paul@myraff.com",
+  "phone": "+1 704 604 2154",
+  "phoneHref": "+17046042154",
+  "social": {
+    "linkedin": "https://www.linkedin.com/in/ptotheraff/",
+    "github": "https://github.com/pauldria"
+  },
+  "nav": [
+    { "label": "Home", "url": "/" },
+    { "label": "About", "url": "/about/" },
+    { "label": "On Hype", "url": "/on-hype/" },
+    { "label": "Insights", "url": "/insights/" },
+    { "label": "Contact", "url": "/contact/" }
+  ],
+  "valueProps": [
+    {
+      "title": "15+ Years of Experience",
+      "body": "Over 15 years across a diverse set of employers, with a common denominator of solid impact every time."
+    },
+    {
+      "title": "Engineering Strength",
+      "body": "To be a great Data Scientist, one has to be a great Engineer as well — finding the right insights and putting them into action."
+    },
+    {
+      "title": "Collaborative Approach",
+      "body": "Ensuring everyone involved is committed to and understands the objectives and goals."
+    },
+    {
+      "title": "Satisfied Partners",
+      "body": "Praised by many partners, clients, and stakeholders, with an expertise and approach that delivers success."
+    }
+  ],
+  "services": [
+    { "title": "Data Analytics", "body": "Turning raw data into clear, decision-ready insight." },
+    { "title": "Experimentation", "body": "Trustworthy A/B testing and causal inference at scale." },
+    { "title": "Data Visualization", "body": "Making complex results simple, honest, and actionable." },
+    { "title": "Technology & Data Infrastructure", "body": "The platforms and pipelines that make data usable." }
+  ],
+  "stats": [
+    { "value": 15, "suffix": "", "label": "Years of Experience" },
+    { "value": 8, "suffix": "", "label": "Expertise Areas" },
+    { "value": 4000, "suffix": "+", "label": "Experiments Run" },
+    { "value": 100, "suffix": "+", "label": "Projects Completed" }
+  ],
+  "timeline": [
+    {
+      "org": "Reddit",
+      "logo": "reddit",
+      "roles": ["Principal Data Scientist"],
+      "body": "Raff joined Reddit in 2021 and had immediate impact with both the Reddit Search product team and Reddit's Experimentation Platform, DDG. He created the foundation for Search's data strategy, enabling the Search engineering team and the rest of Reddit to effectively utilize its data for maximum insight and business value. In parallel, he architected the modernization of DDG's analysis platform, growing Reddit's experimentation throughput from tens to hundreds of simultaneous experiments. Raff is one of only two Principal Data Scientists at Reddit — the highest individual-contributor role — and part of Reddit's technical leadership.",
+      "links": [{ "label": "Default Open", "url": "https://www.redditinc.com/careers" }]
+    },
+    {
+      "org": "Aetna, a CVS Health Company",
+      "logo": "aetna",
+      "roles": ["Principal Data Scientist — Clinical Analytics"],
+      "body": "Raff came in at a critical time in the development of Next-Generation Transform Diabetes Care (ngTDC) and took ownership of the technical aspects of the core machine learning models underlying the program. Working alongside Product, Engineering, Sales, and IT, he led a team of 5 Data Scientists to complete the on-time launch of the pilot and the full commercial launch — contributing hundreds of millions of dollars of EBIT for CVS Health and providing a solid foundation for how CVS Health and Aetna use data to manage chronic diseases.",
+      "links": [{ "label": "Next-Generation Transform Diabetes Care", "url": "https://payorsolutions.cvshealth.com/insights/next-generation-transform-diabetes-care" }]
+    },
+    {
+      "org": "Microsoft",
+      "logo": "microsoft",
+      "roles": ["Principal Data Scientist Lead — ExP", "Principal Program Manager Lead — COSINE Data"],
+      "body": "Raff cut his teeth in A/B experimentation in Microsoft's ExP org, helping it grow from an organization of 10 to 150 — starting as an individual contributor and ending as the leader of a team of 10. He helped Bing, Windows, Office, Xbox, and other organizations run tens of thousands of A/B experiments with simple, effective, and trustworthy analysis. Raff played instrumental roles in ensuring experimentation was built into the core of Windows 10, and built tools to help experimenters understand results and iterate quickly.",
+      "links": [{ "label": "ExP", "url": "https://www.exp-platform.com/" }]
+    },
+    {
+      "org": "Amazon",
+      "logo": "amazon",
+      "roles": ["Applied Researcher — Supply Chain Optimization"],
+      "body": "Raff's contribution to supply chain optimization at Amazon resulted in $60 million of fulfillment savings for Amazon's network in 2012 — think about what that means for Amazon today. He did it through a simple and effective technique coined Global Fulfillment Optimization. Building on patented ideas on fulfillment tie-breaking, he worked with other scientists and engineers to reshape and advance Amazon's fulfillment strategies to massive effect.",
+      "links": [{ "label": "patented ideas on fulfillment tie-breaking", "url": "https://patents.google.com/patent/US8498888B1/en" }]
+    },
+    {
+      "org": "Rutgers University",
+      "logo": "rutgers",
+      "roles": ["PhD — Mathematics"],
+      "body": "Raff earned his PhD in Mathematics at Rutgers University in 2009, with a thesis titled Automated Discovery and Proof in Three Combinatorial Problems.",
+      "links": [{ "label": "Automated Discovery and Proof in Three Combinatorial Problems", "url": "https://rucore.libraries.rutgers.edu/rutgers-lib/26384/" }]
+    },
+    {
+      "org": "Carnegie Mellon University",
+      "logo": "cmu",
+      "roles": ["BS, MS — Mathematics", "BS — Computer Science"],
+      "body": "Raff earned his undergraduate degrees at Carnegie Mellon, sharpening and honing his foundational technical skills and vowing by the Andrew Carnegie mantra — my heart is in the work.",
+      "links": []
+    },
+    {
+      "org": "NC School of Science and Mathematics",
+      "logo": "ncssm",
+      "roles": ["High School"],
+      "body": "Raff attended the prestigious North Carolina School of Science and Mathematics, to which he owes a deep debt.",
+      "links": [{ "label": "North Carolina School of Science and Mathematics", "url": "https://www.ncssm.edu/" }]
+    }
+  ]
+}

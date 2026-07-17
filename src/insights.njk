@@ -1,0 +1,33 @@
+---
+layout: base.njk
+title: "Insights"
+description: "Short essays from Paul Raff on turning data into insight — active documentation, baselines, and avoiding vanity metrics."
+---
+
+<section class="page-hero">
+  <div class="container">
+    <p class="eyebrow">Writing</p>
+    <h1>Insights</h1>
+    <p class="lead">Short essays on turning data into insight — and avoiding the traps that get in the way.</p>
+  </div>
+</section>
+
+<section style="padding-top:1rem">
+  <div class="container">
+    <div class="post-grid">
+      {% for post in collections.posts %}
+        <a class="post-card" href="{{ post.url }}">
+          {% if post.data.cover %}
+            <div class="post-card-media"><img src="{{ post.data.cover }}" alt="" loading="lazy"></div>
+          {% endif %}
+          <div class="post-card-body">
+            <p class="post-meta">{{ post.date | readableDate }}</p>
+            <h3>{{ post.data.title }}</h3>
+            <p class="post-card-desc">{{ post.data.description }}</p>
+            <span class="post-card-more">Read more →</span>
+          </div>
+        </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>

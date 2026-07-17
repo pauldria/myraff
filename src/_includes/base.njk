@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if title %}{{ title }} – {% endif %}{{ site.title }}{% if not title %}, PhD · {{ site.tagline }}{% endif %}</title>
+  <meta name="description" content="{{ description or 'Paul Raff is a highly experienced, collaborative Principal Data Scientist with a strong background in technology and business.' }}">
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+  <meta name="robots" content="max-image-preview:large">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{% if title %}{{ title }} – {% endif %}{{ site.title }}">
+  <meta property="og:description" content="{{ description or 'Principal Data Scientist. 15+ years turning data into impact.' }}">
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+
+  <link rel="icon" type="image/png" href="/assets/img/fano.png">
+  <link rel="apple-touch-icon" href="/assets/img/fano.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&family=Open+Sans:ital,wght@0,400;0,600;1,400&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="/">
+        <img class="brand-mark" src="/assets/img/fano.png" alt="" width="34" height="31">
+        <span class="brand-name">Paul Raff</span>
+      </a>
+
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="primary-nav">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="primary-nav" id="primary-nav" aria-label="Primary">
+        {% for item in site.nav %}
+          <a href="{{ item.url }}"{% if page.url == item.url %} aria-current="page"{% endif %}>{{ item.label }}</a>
+        {% endfor %}
+        <a class="btn btn-sm btn-primary nav-cta" href="mailto:{{ site.email }}?subject=Inquiry%20from%20myraff.com">Let's Talk</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    {{ content | safe }}
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img class="brand-mark" src="/assets/img/fano.png" alt="" width="40" height="37">
+        <div>
+          <p class="footer-name">Paul Raff, PhD</p>
+          <p class="footer-tag">{{ site.tagline }}</p>
+        </div>
+      </div>
+
+      <nav class="footer-nav" aria-label="Footer">
+        {% for item in site.nav %}
+          <a href="{{ item.url }}">{{ item.label }}</a>
+        {% endfor %}
+      </nav>
+
+      <div class="footer-contact">
+        <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+        <a href="tel:{{ site.phoneHref }}">{{ site.phone }}</a>
+        <div class="footer-social">
+          <a href="{{ site.social.linkedin }}" aria-label="LinkedIn" rel="me noopener" target="_blank">LinkedIn</a>
+          <a href="{{ site.social.github }}" aria-label="GitHub" rel="me noopener" target="_blank">GitHub</a>
+        </div>
+      </div>
+    </div>
+    <div class="container footer-legal">
+      <p>© {% year %} Paul Raff. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="/assets/js/main.js" defer></script>
+</body>
+</html>
