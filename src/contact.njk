@@ -1,0 +1,43 @@
+---
+layout: base.njk
+title: "Contact"
+description: "Get in touch with Paul Raff — email, phone, LinkedIn, and GitHub."
+---
+
+<section class="page-hero">
+  <div class="container">
+    <p class="eyebrow">Contact</p>
+    <h1>Let's talk</h1>
+    <p class="lead">Have a data challenge, an experimentation question, or a role in mind? The fastest way to reach me is email — but pick whatever works for you.</p>
+    <div class="hero-cta">
+      <a class="btn btn-primary" href="mailto:{{ site.email }}?subject=Inquiry%20to%20your%20services%20from%20myraff.com">Email Paul</a>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:1rem">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="contact-card">
+        <span class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span>
+        <p class="contact-label">Email</p>
+        <p class="contact-value"><a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+      </div>
+      <div class="contact-card">
+        <span class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5c0 9 6 15 15 15a2 2 0 0 0 2-2v-2.5a1 1 0 0 0-.8-1l-3-.6a1 1 0 0 0-1 .3l-1 1a12 12 0 0 1-5-5l1-1a1 1 0 0 0 .3-1l-.6-3a1 1 0 0 0-1-.8H6a2 2 0 0 0-2 2Z"/></svg></span>
+        <p class="contact-label">Phone</p>
+        <p class="contact-value"><a href="tel:{{ site.phoneHref }}">{{ site.phone }}</a></p>
+      </div>
+      <div class="contact-card">
+        <span class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M8 10v7M8 7v.01M12 17v-4a2 2 0 0 1 4 0v4"/></svg></span>
+        <p class="contact-label">LinkedIn</p>
+        <p class="contact-value"><a href="{{ site.social.linkedin }}" target="_blank" rel="me noopener">in/ptotheraff</a></p>
+      </div>
+      <div class="contact-card">
+        <span class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-4 1.5-4-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1-.3-3.4 1.3a11.5 11.5 0 0 0-6 0C6.9 2.3 5.9 2.6 5.9 2.6a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4.5 9c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg></span>
+        <p class="contact-label">GitHub</p>
+        <p class="contact-value"><a href="{{ site.social.github }}" target="_blank" rel="me noopener">@pauldria</a></p>
+      </div>
+    </div>
+  </div>
+</section>

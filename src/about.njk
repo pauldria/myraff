@@ -1,0 +1,45 @@
+---
+layout: base.njk
+title: "About"
+description: "Paul Raff — who goes by Raff — has over 15 years of experience in data science and applied research, on top of his PhD education."
+---
+
+<section class="page-hero">
+  <div class="container">
+    <p class="eyebrow">About</p>
+    <h1>Impact, across domains</h1>
+    <p class="lead">Paul Raff — who goes by Raff — has over 15 years of experience in data science and applied research on top of his PhD education. Here's a summary of the impact he has delivered across multiple domains.</p>
+  </div>
+</section>
+
+<section style="padding-top:1rem">
+  <div class="container">
+    <div class="timeline">
+      {% for job in site.timeline %}
+        <div class="tl-item">
+          <span class="tl-logo"><img src="/assets/img/logos/{{ job.logo }}.png" alt="{{ job.org }} logo"></span>
+          <p class="tl-org">{{ job.org }}</p>
+          {% for role in job.roles %}
+            <p class="tl-role">{{ role }}</p>
+          {% endfor %}
+          <p class="tl-body">{{ job.body }}</p>
+          {% if job.links.length %}
+            <p class="tl-links">
+              {% for l in job.links %}<a href="{{ l.url }}" target="_blank" rel="noopener">{{ l.label }}&nbsp;↗</a>{% if not loop.last %} · {% endif %}{% endfor %}
+            </p>
+          {% endif %}
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="cta-banner">
+  <div class="container">
+    <div class="cta-card">
+      <h2>Interested in working together?</h2>
+      <p>Whether it's experimentation, analytics, or data infrastructure — I'd love to hear what you're working on.</p>
+      <a class="btn btn-primary" href="/contact/">Get in Touch</a>
+    </div>
+  </div>
+</section>

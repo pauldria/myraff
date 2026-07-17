@@ -1,0 +1,114 @@
+---
+layout: base.njk
+title: ""
+description: "Paul Raff is a highly experienced, collaborative Principal Data Scientist with a strong background in technology and business and a wide variety of expertise and accomplishments."
+---
+
+<section class="hero">
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <p class="eyebrow">{{ site.tagline }}</p>
+      <h1>Paul Raff, PhD</h1>
+      <p class="lead">A highly experienced, collaborative Data Scientist with a strong background in technology and business — and a wide variety of expertise and accomplishments.</p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="/about/">Learn More</a>
+        <a class="btn btn-ghost" href="mailto:{{ site.email }}?subject=Inquiry%20to%20your%20services%20from%20myraff.com">Let's Talk</a>
+      </div>
+    </div>
+    <div class="hero-media">
+      <img src="/assets/img/hero.png" alt="Abstract illustration of a data-driven world" width="1024" height="1024">
+      <div class="hero-badge"><span class="dot"></span> <span><strong>15+ years</strong> of measurable impact</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="props-section">
+  <div class="container">
+    <div class="props">
+      {% for p in site.valueProps %}
+        <div class="prop">
+          <span class="prop-num">0{{ loop.index }}</span>
+          <h3>{{ p.title }}</h3>
+          <p>{{ p.body }}</p>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="bg-surface">
+  <div class="container split">
+    <div class="split-media">
+      <img src="/assets/img/hero.png" alt="Data science, visualized" width="1024" height="1024">
+    </div>
+    <div class="split-copy">
+      <p class="eyebrow">Meet Paul Raff</p>
+      <h2>Data Science Expert</h2>
+      <p class="lead">A skilled Data Scientist covering all data- and tech-related needs across a wide variety of situations. Reach out today for all your data needs.</p>
+      <div class="feature-list">
+        <div class="feature-item">
+          <h4>Expertise in Technology and Data</h4>
+          <p>As a Principal Data Scientist with 15 years of experience, Paul is a top expert across data science, technology, and mathematics.</p>
+        </div>
+        <div class="feature-item">
+          <h4>Comprehensive Consulting Solutions</h4>
+          <p>From coding and analytics to programming and beyond, Paul has the expertise to provide comprehensive consulting and delivery for all your technology and data needs.</p>
+        </div>
+      </div>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="/about/">Learn More</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="services-section">
+  <div class="container">
+    <div class="section-head center">
+      <p class="eyebrow">What I Do</p>
+      <h2>Services Provided</h2>
+      <p class="lead">Take your business to the next level with Paul Raff's help.</p>
+    </div>
+    <div class="services">
+      {% set icons = [
+        '<path d="M3 3v18h18"/><rect x="7" y="11" width="3" height="6" rx="1"/><rect x="12" y="7" width="3" height="10" rx="1"/><rect x="17" y="4" width="3" height="13" rx="1"/>',
+        '<path d="M12 3a4 4 0 0 1 4 4c0 1.5-.8 2.5-1.6 3.4C13.4 11.6 13 12.2 13 13h-2c0-1.4.7-2.3 1.6-3.2.7-.8 1.4-1.4 1.4-2.8a2 2 0 1 0-4 0H8a4 4 0 0 1 4-4Z"/><circle cx="12" cy="18" r="1.4"/>',
+        '<path d="M4 19V5m0 14h16M8 15l3-4 3 3 4-6"/>',
+        '<rect x="3" y="4" width="18" height="5" rx="1.5"/><rect x="3" y="12" width="18" height="5" rx="1.5"/><circle cx="7" cy="6.5" r="1"/><circle cx="7" cy="14.5" r="1"/>'
+      ] %}
+      {% for s in site.services %}
+        <div class="service">
+          <span class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">{{ icons[loop.index0] | safe }}</svg></span>
+          <h3>{{ s.title }}</h3>
+          <p>{{ s.body }}</p>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="stats-band">
+  <div class="container">
+    <div class="section-head center">
+      <p class="eyebrow">By the Numbers</p>
+    </div>
+    <div class="stats">
+      {% for s in site.stats %}
+        <div class="stat">
+          <div class="stat-num" data-count="{{ s.value }}" data-suffix="{{ s.suffix }}">0{{ s.suffix }}</div>
+          <div class="stat-label">{{ s.label }}</div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="cta-banner">
+  <div class="container">
+    <div class="cta-card">
+      <h2>Let's put your data to work</h2>
+      <p>From experimentation and analytics to the infrastructure that supports them — let's talk about what your data can do.</p>
+      <a class="btn btn-primary" href="mailto:{{ site.email }}?subject=Inquiry%20to%20your%20services%20from%20myraff.com">Get in Touch</a>
+    </div>
+  </div>
+</section>
