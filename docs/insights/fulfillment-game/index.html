@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Two Warehouses, Ten Orders – Paul Raff</title>
+  <meta name="description" content="An interactive puzzle: route ten orders across two fulfillment centers under an inventory cap, then see how close you got to the optimal plan.">
+  <link rel="canonical" href="https://myraff.com/insights/fulfillment-game/">
+  <meta name="robots" content="max-image-preview:large">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Two Warehouses, Ten Orders – Paul Raff">
+  <meta property="og:description" content="An interactive puzzle: route ten orders across two fulfillment centers under an inventory cap, then see how close you got to the optimal plan.">
+  <meta property="og:url" content="https://myraff.com/insights/fulfillment-game/">
+
+  <link rel="icon" type="image/png" href="/assets/img/fano.png">
+  <link rel="apple-touch-icon" href="/assets/img/fano.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&family=Open+Sans:ital,wght@0,400;0,600;1,400&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="/">
+        <img class="brand-mark" src="/assets/img/fano.png" alt="" width="34" height="31">
+        <span class="brand-name">Paul Raff</span>
+      </a>
+
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="primary-nav">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="primary-nav" id="primary-nav" aria-label="Primary">
+        
+          <a href="/">Home</a>
+        
+          <a href="/about/">About</a>
+        
+          <a href="/on-hype/">On Hype</a>
+        
+          <a href="/insights/">Insights</a>
+        
+          <a href="/contact/">Contact</a>
+        
+        <a class="btn btn-sm btn-primary nav-cta" href="mailto:paul@myraff.com?subject=Inquiry%20from%20myraff.com">Let's Talk</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <article class="post">
+  <div class="page-hero post-header">
+    <div class="container prose">
+      <p class="eyebrow"><a href="/insights/">Insights</a></p>
+      <h1>Two Warehouses, Ten Orders</h1>
+      <p class="post-meta">August 1, 2026</p>
+    </div>
+  </div>
+
+  
+
+  <div class="container prose post-body">
+    <p class="intro">Fulfillment looks like a series of small, obvious choices: each order should ship from whichever warehouse is cheapest. But warehouses have finite stock &mdash; and the moment a cheap option is scarce, the &ldquo;obvious&rdquo; local choice can quietly cost you.</p>
+
+<p>Here's a toy version of the problem. Ten orders arrive one at a time, each headed to a random state. You can fill each order from <strong>LEX1</strong> or <strong>SFO1</strong>, and each shows its shipping cost for that destination. The catch: <strong>SFO1 only has 2 units in stock</strong>, while LEX1 has 8. Since the two warehouses hold exactly ten units between them, every order ships &mdash; the only real decision is <em>which two orders you spend your scarce SFO1 stock on.</em></p>
+
+<p>Play through it below, then compare your total against the optimal plan. Spend your two SFO1 shipments on the orders where they save you the most versus LEX1, and you'll match the optimizer.</p>
+
+
+<style>
+  .fg{ margin:2rem 0 0; }
+  .fg-card{
+    background:#fff; border:1px solid var(--line); border-radius:var(--radius-lg);
+    box-shadow:var(--shadow-md); padding:clamp(1.5rem,4vw,2.2rem);
+  }
+  .fg-meta{ display:flex; justify-content:space-between; align-items:center; gap:1rem; margin-bottom:1.4rem; }
+  .fg-pill{
+    font-family:var(--font-mono); text-transform:uppercase; letter-spacing:.1em; font-size:.74rem;
+    background:var(--surface-2); color:var(--ink-soft); padding:.35rem .8rem; border-radius:999px;
+  }
+  .fg-running{ font-family:var(--font-mono); font-size:.9rem; color:var(--ink-soft); }
+  .fg-running b{ color:var(--ink); }
+
+  .fg-top{ display:flex; gap:1.1rem; align-items:flex-start; }
+  .fg-cube{ width:64px; height:64px; flex:0 0 auto; }
+  .fg-order{ font-size:1.05rem; color:var(--ink-soft); }
+  .fg-order .fg-state{ font-family:var(--font-display); font-weight:600; color:var(--ink); }
+  .fg-costs{ margin-top:.5rem; display:grid; gap:.25rem; }
+  .fg-costrow{ display:flex; align-items:center; gap:.5rem; }
+  .fg-dot{ width:11px; height:11px; border-radius:50%; }
+  .fg-dot.lex{ background:var(--primary); }
+  .fg-dot.sfo{ background:var(--accent); }
+  .fg-costrow b{ color:var(--ink); }
+
+  .fg-btns{ display:flex; gap:1rem; margin-top:1.6rem; }
+  .fg-pick{
+    flex:1; cursor:pointer; text-align:left; background:#fff;
+    border:1.5px solid var(--line); border-radius:var(--radius); padding:1rem 1.1rem;
+    font-family:var(--font-display); font-weight:600; font-size:1.05rem; color:var(--ink);
+    transition:transform .15s ease, box-shadow .15s ease, border-color .15s ease;
+  }
+  .fg-pick:hover:not(:disabled){ transform:translateY(-3px); box-shadow:var(--shadow-md); }
+  .fg-pick.lex:hover:not(:disabled){ border-color:var(--primary); }
+  .fg-pick.sfo:hover:not(:disabled){ border-color:var(--accent); }
+  .fg-pick small{ display:block; font-family:var(--font-mono); font-weight:400; font-size:.8rem; color:var(--muted); margin-top:.35rem; letter-spacing:.02em; }
+  .fg-pick:disabled{ opacity:.4; cursor:not-allowed; }
+
+  .fg-inv{ display:flex; gap:2rem; margin-top:1.6rem; padding-top:1.3rem; border-top:1px solid var(--line);
+    font-family:var(--font-display); font-weight:600; font-size:1.05rem; }
+  .fg-inv .n{ font-size:1.3rem; }
+  .fg-inv .lo{ color:#c0392b; }
+
+  .fg-scorebox{ display:flex; gap:1rem; margin:0 0 1.2rem; }
+  .fg-score{ flex:1; border:1px solid var(--line); border-radius:var(--radius); padding:1.1rem; text-align:center; background:var(--surface); }
+  .fg-score .lbl{ font-family:var(--font-mono); text-transform:uppercase; letter-spacing:.1em; font-size:.72rem; color:var(--muted); }
+  .fg-score .val{ font-family:var(--font-display); font-weight:700; font-size:1.9rem; margin-top:.2rem; }
+  .fg .fg-verdict{ font-family:var(--font-display); font-weight:600; font-size:1.2rem; text-align:center; margin:.4rem 0; }
+  .fg .fg-note{ color:var(--muted); font-size:.95rem; text-align:center; margin:0 0 .5rem; }
+  .fg-table{ width:100%; border-collapse:collapse; margin-top:1rem; font-size:.92rem; }
+  .fg-table th,.fg-table td{ padding:.55rem .5rem; text-align:center; border-bottom:1px solid var(--line); }
+  .fg-table th{ font-family:var(--font-mono); text-transform:uppercase; letter-spacing:.06em; font-size:.68rem; color:var(--muted); font-weight:500; }
+  .fg-table td.dest{ text-align:left; }
+  .fg-tag{ font-family:var(--font-mono); font-size:.7rem; padding:.15rem .5rem; border-radius:999px; font-weight:500; }
+  .fg-tag.lex{ background:rgba(61,90,254,.12); color:var(--primary-dark); }
+  .fg-tag.sfo{ background:rgba(0,194,168,.14); color:#08857a; }
+  .fg-table tr.miss td{ background:rgba(192,57,43,.06); }
+  .fg-actions{ margin-top:1.5rem; text-align:center; }
+  .fg-hidden{ display:none; }
+  @media (max-width:520px){ .fg-btns{ flex-direction:column; } .fg-top{ flex-direction:column; } }
+</style>
+
+<div class="fg">
+  <div id="fg-game" class="fg-card">
+    <div class="fg-meta">
+      <span class="fg-pill" id="fg-progress">Order 1 of 10</span>
+      <span class="fg-running">Spent so far: <b>$<span id="fg-run">0.00</span></b></span>
+    </div>
+    <div class="fg-top">
+      <svg class="fg-cube" viewBox="0 0 100 100" aria-hidden="true">
+        <g stroke="#0f141a" stroke-width="3">
+          <rect x="8"  y="8"  width="26" height="26" fill="#e23b3b"/>
+          <rect x="37" y="8"  width="26" height="26" fill="#fff"/>
+          <rect x="66" y="8"  width="26" height="26" fill="#f5c518"/>
+          <rect x="8"  y="37" width="26" height="26" fill="#2f7d4f"/>
+          <rect x="37" y="37" width="26" height="26" fill="#3d5afe"/>
+          <rect x="66" y="37" width="26" height="26" fill="#e23b3b"/>
+          <rect x="8"  y="66" width="26" height="26" fill="#fff"/>
+          <rect x="37" y="66" width="26" height="26" fill="#e8842b"/>
+          <rect x="66" y="66" width="26" height="26" fill="#2f7d4f"/>
+        </g>
+      </svg>
+      <div class="fg-order">
+        Order placed to deliver to <span class="fg-state" id="fg-state">&mdash;</span>
+        <div class="fg-costs">
+          <div class="fg-costrow"><span class="fg-dot lex"></span> Cost from LEX1: <b>$<span id="fg-lexcost">0</span></b></div>
+          <div class="fg-costrow"><span class="fg-dot sfo"></span> Cost from SFO1: <b>$<span id="fg-sfocost">0</span></b></div>
+        </div>
+      </div>
+    </div>
+    <div class="fg-btns">
+      <button class="fg-pick lex" id="fg-btnLex" onclick="fgChoose('LEX1')">Ship from LEX1<small id="fg-lexsub"></small></button>
+      <button class="fg-pick sfo" id="fg-btnSfo" onclick="fgChoose('SFO1')">Ship from SFO1<small id="fg-sfosub"></small></button>
+    </div>
+    <div class="fg-inv">
+      <div>LEX1 Inventory: <span class="n" id="fg-invLex">8</span></div>
+      <div>SFO1 Inventory: <span class="n" id="fg-invSfo">2</span></div>
+    </div>
+  </div>
+
+  <div id="fg-summary" class="fg-card fg-hidden">
+    <h2 style="margin-top:0">Results</h2>
+    <div class="fg-scorebox">
+      <div class="fg-score"><div class="lbl">Your total cost</div><div class="val" id="fg-yourTotal">$0</div></div>
+      <div class="fg-score"><div class="lbl">Best possible</div><div class="val" id="fg-optTotal" style="color:var(--accent)">$0</div></div>
+    </div>
+    <div class="fg-verdict" id="fg-verdict"></div>
+    <p class="fg-note" id="fg-explain"></p>
+    <table class="fg-table">
+      <thead><tr><th>#</th><th class="dest">Destination</th><th>LEX1</th><th>SFO1</th><th>Your pick</th><th>Optimal</th></tr></thead>
+      <tbody id="fg-rows"></tbody>
+    </table>
+    <div class="fg-actions">
+      <button class="btn btn-ghost btn-sm" onclick="fgReset()">Play again &#8635;</button>
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+  const WEST = new Set(['CA','WA','OR','ID','CO','AZ','TX','MT','WY','NE','ND','SD','OK']);
+  const STATES = {
+    AL:'Alabama',AK:'Alaska',AZ:'Arizona',AR:'Arkansas',CA:'California',CO:'Colorado',
+    CT:'Connecticut',DE:'Delaware',FL:'Florida',GA:'Georgia',HI:'Hawaii',ID:'Idaho',
+    IL:'Illinois',IN:'Indiana',IA:'Iowa',KS:'Kansas',KY:'Kentucky',LA:'Louisiana',
+    ME:'Maine',MD:'Maryland',MA:'Massachusetts',MI:'Michigan',MN:'Minnesota',MS:'Mississippi',
+    MO:'Missouri',MT:'Montana',NE:'Nebraska',NV:'Nevada',NH:'New Hampshire',NJ:'New Jersey',
+    NM:'New Mexico',NY:'New York',NC:'North Carolina',ND:'North Dakota',OH:'Ohio',OK:'Oklahoma',
+    OR:'Oregon',PA:'Pennsylvania',RI:'Rhode Island',SC:'South Carolina',SD:'South Dakota',
+    TN:'Tennessee',TX:'Texas',UT:'Utah',VT:'Vermont',VA:'Virginia',WA:'Washington',
+    WV:'West Virginia',WI:'Wisconsin',WY:'Wyoming'
+  };
+  const CODES = Object.keys(STATES);
+  const CAP = { LEX1: 8, SFO1: 2 };
+  const N = 10;
+
+  function rand25(min,max){ const s=Math.round((max-min)/0.25); return min+0.25*Math.floor(Math.random()*(s+1)); }
+  function money(x){ return x.toFixed(2); }
+  const $ = id => document.getElementById(id);
+
+  let orders, cur, inv, spent;
+
+  function makeOrders(){
+    const a=[];
+    for(let i=0;i<N;i++){
+      const code=CODES[Math.floor(Math.random()*CODES.length)];
+      const west=WEST.has(code);
+      a.push({ i, code, name:STATES[code], west, lex:rand25(4,6), sfo: west?3.00:rand25(8,10), pick:null });
+    }
+    return a;
+  }
+
+  function render(){
+    const o=orders[cur];
+    $('fg-progress').textContent='Order '+(cur+1)+' of '+N;
+    $('fg-run').textContent=money(spent);
+    $('fg-state').textContent=o.name+' ('+o.code+')';
+    $('fg-lexcost').textContent=money(o.lex);
+    $('fg-sfocost').textContent=money(o.sfo);
+    $('fg-invLex').textContent=inv.LEX1;
+    $('fg-invSfo').textContent=inv.SFO1;
+    $('fg-invLex').className='n'+(inv.LEX1===0?' lo':'');
+    $('fg-invSfo').className='n'+(inv.SFO1===0?' lo':'');
+    const bL=$('fg-btnLex'), bS=$('fg-btnSfo');
+    bL.disabled=inv.LEX1===0; bS.disabled=inv.SFO1===0;
+    $('fg-lexsub').textContent=inv.LEX1===0?'out of stock':'$'+money(o.lex)+' · '+inv.LEX1+' left';
+    $('fg-sfosub').textContent=inv.SFO1===0?'out of stock':'$'+money(o.sfo)+' · '+inv.SFO1+' left';
+  }
+
+  window.fgChoose=function(wh){
+    if(inv[wh]===0) return;
+    const o=orders[cur];
+    o.pick=wh; inv[wh]--; spent+=(wh==='LEX1'?o.lex:o.sfo); cur++;
+    if(cur>=N) finish(); else render();
+  };
+
+  function computeOptimum(){
+    const sav=orders.map(o=>({i:o.i,s:o.lex-o.sfo})).sort((a,b)=>b.s-a.s);
+    const sfoSet=new Set(sav.slice(0,CAP.SFO1).map(x=>x.i));
+    let total=0;
+    orders.forEach(o=>{ o.opt=sfoSet.has(o.i)?'SFO1':'LEX1'; total+=(o.opt==='SFO1'?o.sfo:o.lex); });
+    return total;
+  }
+
+  function finish(){
+    const opt=computeOptimum(), you=spent;
+    $('fg-game').classList.add('fg-hidden');
+    $('fg-summary').classList.remove('fg-hidden');
+    $('fg-yourTotal').textContent='$'+money(you);
+    $('fg-optTotal').textContent='$'+money(opt);
+    const gap=you-opt, v=$('fg-verdict'), ex=$('fg-explain');
+    if(gap<0.001){
+      v.textContent='🎉 Perfect — you matched the optimal plan.'; v.style.color='var(--accent)'; ex.textContent='';
+    } else {
+      v.textContent='You paid $'+money(gap)+' more than optimal.'; v.style.color='#c0392b';
+      ex.textContent='Red rows are where your pick differed from optimal.';
+    }
+    const tb=$('fg-rows'); tb.innerHTML='';
+    const tag=w=>'<span class="fg-tag '+w.toLowerCase()+'">'+w+'</span>';
+    orders.forEach(o=>{
+      const tr=document.createElement('tr');
+      if(o.pick!==o.opt) tr.className='miss';
+      tr.innerHTML='<td>'+(o.i+1)+'</td><td class="dest">'+o.name+'</td><td>$'+money(o.lex)+'</td><td>$'+money(o.sfo)+'</td><td>'+tag(o.pick)+'</td><td>'+tag(o.opt)+'</td>';
+      tb.appendChild(tr);
+    });
+  }
+
+  window.fgReset=function(){
+    orders=makeOrders(); cur=0; inv={LEX1:CAP.LEX1,SFO1:CAP.SFO1}; spent=0;
+    $('fg-summary').classList.add('fg-hidden');
+    $('fg-game').classList.remove('fg-hidden');
+    render();
+  };
+
+  fgReset();
+})();
+</script>
+
+
+  </div>
+
+  <div class="container prose post-nav">
+    <a class="btn btn-ghost btn-sm" href="/insights/">← All Insights</a>
+  </div>
+</article>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img class="brand-mark" src="/assets/img/fano.png" alt="" width="40" height="37">
+        <div>
+          <p class="footer-name">Paul Raff, PhD</p>
+          <p class="footer-tag">Principal Data Scientist</p>
+        </div>
+      </div>
+
+      <nav class="footer-nav" aria-label="Footer">
+        
+          <a href="/">Home</a>
+        
+          <a href="/about/">About</a>
+        
+          <a href="/on-hype/">On Hype</a>
+        
+          <a href="/insights/">Insights</a>
+        
+          <a href="/contact/">Contact</a>
+        
+      </nav>
+
+      <div class="footer-contact">
+        <a href="mailto:paul@myraff.com">paul@myraff.com</a>
+        <a href="tel:+17046042154">+1 704 604 2154</a>
+        <div class="footer-social">
+          <a href="https://www.linkedin.com/in/ptotheraff/" aria-label="LinkedIn" rel="me noopener" target="_blank">LinkedIn</a>
+          <a href="https://github.com/pauldria" aria-label="GitHub" rel="me noopener" target="_blank">GitHub</a>
+        </div>
+      </div>
+    </div>
+    <div class="container footer-legal">
+      <p>© 2026 Paul Raff. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="/assets/js/main.js" defer></script>
+</body>
+</html>
