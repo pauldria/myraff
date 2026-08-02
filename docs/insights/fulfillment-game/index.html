@@ -68,7 +68,19 @@
   <div class="container prose post-body">
     <p class="intro">Fulfillment looks like a series of small, obvious choices: each order should ship from whichever warehouse is cheapest. But warehouses have finite stock &mdash; and the moment a cheap option is scarce, the &ldquo;obvious&rdquo; local choice can quietly cost you.</p>
 
-<p>Here's a toy version of the problem. Ten orders arrive one at a time, each headed to a random state. You can fill each order from <strong>LEX1</strong> or <strong>SFO1</strong>, and each shows its shipping cost for that destination. The catch: <strong>SFO1 only has 2 units in stock</strong>, while LEX1 has 8. Since the two warehouses hold exactly ten units between them, every order ships &mdash; the only real decision is <em>which two orders you spend your scarce SFO1 stock on.</em></p>
+<p>At Amazon I was instrumental in the creation and deployment of <i>Glocal Fulfillment Optimization</i> (GFO) which was based on a simple premise: greedy order fulfillment is suboptimal!</p>
+
+<p>Making it a reality at Amazon's scale required ingenuity, collaboration, and sharp attention to detail. The net result is a setup that verifiably saved $60 million per year in fulfillment costs in 2011, which is a far larger number today.</p>
+
+<p>Key insights:
+  <ul>
+    <li><strong>Start simple, and iterate - </strong> there were clear simpler problems we could address and solve first: single-item orders instead of multi-item orders for example. It's always worth it to start small and iterate.</li>
+    <li><strong>Model it, don't ML it - </strong> various probabilistic techniques were attempted as well during the research process. What we found out quickly though is that this problem could be fully specified and modeled out. Too often folks are eager to "throw ML at it" which can be long-term suboptimal if you can model your situation out fully!</li>
+    <li><strong>Strong collaboration across disciplines is the epitome of success - </strong> daily standups with engineering and a relentless focus on verification and validation resulted in a successful launch and immediate impact.</li>
+  </ul>
+</p>
+
+<p>Here's an interactive way to understand the problem: we have 10 units of a toy spread across two warehouses, and orders coming in from across the country. LEX1 is a large, generally inexpensive warehouse, but SFO1 can capture savings for orders placed on the west coast. If you have to choose greedily when each order is placed, can you make the right decisions?</p>
 
 <p>Play through it below, then compare your total against the optimal plan. Spend your two SFO1 shipments on the orders where they save you the most versus LEX1, and you'll match the optimizer.</p>
 
